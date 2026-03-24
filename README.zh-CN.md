@@ -130,8 +130,8 @@ ssh-guard/
 
 这个限制只影响私聊。群聊本来就会路由成 `agent:<agentId>:<channel>:group:<groupId>`，审批 key 会稳定落在群 id 上。
 
-当前根入口 `index.ts` 默认重新导出中文实现 `index.zh-CN.ts`。
-如果你想给英文用户使用英文审批提示，可以把插件入口改为 `index.en.ts`，或者把根入口切过去再加载。
+当前根入口 `index.ts` 默认重新导出英文实现 `index.en.ts`。
+如果你想给中文用户使用中文审批提示，可以把插件入口改为 `index.zh-CN.ts`，或者把根入口切过去再加载。
 
 ## 作为 Skill 使用
 

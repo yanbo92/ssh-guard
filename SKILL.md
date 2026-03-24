@@ -23,7 +23,7 @@ Help the user install and enable the `ssh-guard` plugin from this repository.
 2. Ask which approval language the user wants:
    - Chinese: `index.zh-CN.ts`
    - English: `index.en.ts`
-3. Default to Chinese if the user does not specify a language.
+3. Default to English if the user does not specify a language.
 4. Ensure the plugin directory is reachable from `plugins.load.paths`.
 5. Ensure `plugins.entries["ssh-guard"].enabled` is `true`.
 6. Check the current top-level `session.dmScope` value first.
@@ -50,14 +50,14 @@ Use these entry files:
 
 - `index.zh-CN.ts`: Chinese approval prompts and approval keywords
 - `index.en.ts`: English approval prompts and approval keywords
-- `index.ts`: default entry and currently points to `index.zh-CN.ts`
+- `index.ts`: default entry and currently points to `index.en.ts`
 
-If the user wants English prompts, either:
+If the user wants Chinese prompts, either:
 
-- change the plugin entry to load `index.en.ts`, or
-- change `index.ts` to export `index.en.ts`
+- change the plugin entry to load `index.zh-CN.ts`, or
+- change `index.ts` to export `index.zh-CN.ts`
 
-If the user wants Chinese prompts, keep the current default or point the entry to `index.zh-CN.ts`.
+If the user wants English prompts, keep the current default or point the entry to `index.en.ts`.
 
 ## Installation Rules
 
@@ -110,7 +110,7 @@ When the user asks what this repository is for, explain:
 
 - Prefer direct, actionable installation guidance over re-explaining the internal approval state machine.
 - If the user asks to install the plugin into another repo, update that repo’s config to reference this repository cleanly.
-- If language preference is unknown and no surrounding context suggests otherwise, choose Chinese by default and mention that English is available.
+- If language preference is unknown and no surrounding context suggests otherwise, choose English by default and mention that Chinese is available.
 
 ---
 

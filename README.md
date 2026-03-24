@@ -130,8 +130,8 @@ Why `main` is not supported:
 
 This limitation applies to direct messages. Group sessions already route as `agent:<agentId>:<channel>:group:<groupId>`, so group approval stays keyed by the group id.
 
-`index.ts` currently re-exports the Chinese implementation from `index.zh-CN.ts`.
-If you want the English approval prompts instead, point the plugin entry to `index.en.ts` or swap the root export before loading it.
+`index.ts` currently re-exports the English implementation from `index.en.ts`.
+If you want the Chinese approval prompts instead, point the plugin entry to `index.zh-CN.ts` or swap the root export before loading it.
 
 ## Use As A Skill
 
