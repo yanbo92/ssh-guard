@@ -245,7 +245,7 @@ export default function register(api: OpenClawPluginApi) {
       return;
     }
 
-    if (state?.awaitingApproval) {
+    if (isSshExec && state?.awaitingApproval) {
       return {
         block: true,
         blockReason:
