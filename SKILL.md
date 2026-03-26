@@ -1,6 +1,7 @@
 ---
 name: ssh-guard
-description: Install, wire up, or configure the ssh-guard OpenClaw plugin from this repository. Use when helping a user add ssh-guard to an OpenClaw deployment, copy or symlink the plugin into a plugin/extensions directory, update `openclaw.json`, choose Chinese or English approval prompts, or explain how to publish and consume this plugin repository. Describe the plugin accurately as blocking commands whose command text contains `ssh`.
+version: 1.0.3
+description: Intercepts SSH exec calls and pauses them for user approval. Supports one-time and session-wide approval modes, with automatic state cleanup when sessions end.
 ---
 
 # SSH Guard
